@@ -35,13 +35,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full">
+      <head>
         <script
           dangerouslySetInnerHTML={{
             __html:
               "(function(){try{if(localStorage.getItem('ledgerly-theme')==='dark'){document.documentElement.classList.add('dark');document.documentElement.style.colorScheme='dark';}}catch(e){}})();",
           }}
         />
+      </head>
+      <body className="min-h-full">
         <AppShell>{children}</AppShell>
       </body>
     </html>

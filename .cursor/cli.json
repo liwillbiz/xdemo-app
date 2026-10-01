@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(ls)",
+      "Shell(test)",
+      "Shell(echo)",
+      "Shell(rg)",
+      "Shell(diff)",
+      "Shell(jq)",
+      "Shell(sleep)",
+      "Shell(herdr:*)",
+      "Shell(fd)",
+      "Shell(wc)",
+      "Shell(cat)",
+      "Shell(cut)",
+      "Shell(find)",
+      "Shell(head)",
+      "Shell(npm:run *)",
+      "WebFetch(cursor.com)",
+      "Mcp(plugin-slack-slack:*)",
+      "Mcp(slack:*)",
+      "Mcp(plugin-slack-slack:slack_search_public_and_private)",
+      "Mcp(plugin-slack-slack:slack_read_thread)",
+      "WebFetch(docs.slack.dev)"
+    ],
+    "deny": []
+  }
+}

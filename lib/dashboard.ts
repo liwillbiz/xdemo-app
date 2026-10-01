@@ -89,9 +89,9 @@ export function disputeBreakdown(disputes: DisputeLike[]) {
     (dispute) => dispute.status === "ACCEPTED" || dispute.status === "DECLINED",
   ).length;
   return [
-    { id: "needs", label: "Needs response", count: needsResponse, color: "#dc2626" },
-    { id: "review", label: "In review", count: inReview, color: "#d97706" },
-    { id: "resolved", label: "Resolved", color: "#4f46e5", count: resolved },
+    { id: "needs", label: "Needs response", count: needsResponse, color: "var(--danger)" },
+    { id: "review", label: "In review", count: inReview, color: "var(--warning)" },
+    { id: "resolved", label: "Resolved", color: "var(--indigo)", count: resolved },
   ] as const;
 }
 
